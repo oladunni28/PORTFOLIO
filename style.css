@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* main styling*/
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+    background-color:rgb(115, 161, 199);
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+/*nav bar*/
+#navbar{
+    background-color: rgb(163, 46, 159);
+    color: white;
+    overflow: auto;
+}
+
+#navbar a{
+    color: white;
+}
+
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    float: right;
+    padding: 20px;
+}
+
+/*#navbar ul li a {
+    display: block;
+    text-align: center;
+}*/
+
+/*footer*/
+#main-footer{
+    background-color: rgb(163, 46, 159);
+    color: white;
+    padding: 20px;
+}
+
+
+
+.fa fab{
+    font-size: 40px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.center{
+    border: 5px solid whitesmoke;
+    background-color: rosybrown;
+    text-align: center;
+    justify-content: center;
+    margin-left:  30em;
+    margin-right: 30em;
+    margin-top: 10em;
+    padding: 40px;
+}
+
+.aboutme{
+        border: 5px solid whitesmoke;
+        background-color: rosybrown;
+        text-align: center;
+        justify-content: center;
+        margin-left:  30em;
+        margin-right: 30em;
+        margin-top: 10em;
+        padding: 40px;
+    }
+
+
+.center li{
+    list-style: none;
+}
