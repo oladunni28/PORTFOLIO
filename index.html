@@ -12,35 +12,111 @@
 <body>
     <header>
         <nav id="navbar">
-            <h1 class="logo"><a href="index.html">My-Portfolio</a></h1>
-            <ul>
+            <ul class="navbar">
+                <h1 class="logo"><a href="index.html">Coolcode</a></h1>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 </body>
-<div id="showcase">
-    <div class="container">
-        <div class="showcase-content">
-            <h1>Hello</h1>
-            <p>My name is Maryam Moshood Salami,<br>
-            i am a frontend developer, i have serious passion for coding.</p>
-            <div class="work">
-            <a href="work.html">view my work</a>
-            </div>
+<!--main-->
+<div class="wrapper">
+<div class="card">
+    <div class="main">
+        <img src="./maryam.jpeg" width="150px" alt="me"><br>
+            <h1>Hello,</h1>
+            <p>I'm Maryam, a Software Developer from Lagos, Nigeria. 
+            </p> 
+            <!-- Birmingham, West Midlands. -->
         </div>
     </div>
-</div>
-<footer id="main-footer">
-    <p>Maryam &copy; 2021, All Rights Reserved</p>
-    <i class="far fa-envelope"></i>
-    <i class="fab fa-linkedin"></i>
-    <i class="fab fa-whatsapp"></i>
-    <i class="fab fa-github"></i>
 
-    <i class="far fa-envelope"></i>
+
+
+<!--about-->
+<div class="card">
+<div id = "about" class="about">
+    <p>
+        I'm a reliable, energetic,
+     passionate and ambitious graduate<br>
+ with problem solving skills, Analytical and qualitative abilities,<br>
+  A good team player with emerging leadership qualities<br> 
+    who can make valuable contributions within a team 
+    <br>and has an aptitude for learning and practicing.
+
+    <br><br>
+   <strong><em>I see everything I do as an opportunity
+    for authentic creative self-expression.</em></strong><br><br>
+    </p>
+</div>
+</div>
+
+
+<!--hobby-->
+<div class="card">
+<div class="tee">
+    <p>When I'm not making stuff, I like coding,
+     cooking, or exploring new places.<br>
+ If you think we should co-create something awesome together,
+  let me know!
+</p>
+</div>
+</div>
+
+<!--work-->
+<div class="card">
+    <div class="work">
+<div id = "work" class="work"></div>
+    <p>Html</p>
+    <p>css</p>
+    <p>javascript</p>
+    <p>Git and github</p>
+    <p>Data structure and Algorithms</p>
+
+</div>
+</div>
+
+<!--form-->
+
+<div id ="contact" class="form">
+<form action="message">
+    <h1>message</h1>
+    <p>Wanna know more?</p>
+    <p>What to know more about my coding skills?<br>
+    Have an exciting project that could use my help?<br>
+Drop me a line and let's chat!</p>
+<br><br>
+    <label for="name">Name</label><br>
+    <input type="name" id="name"><br>
+    <label for="email">Email</label><br>
+    <input type="email" id="email"><br>
+    <label for="textarea">Message</label><br>
+    <textarea name="message" id="message" cols="50" rows="8"></textarea><br><br>
+    <button class="btn">Send</button><br><br>
+</form>
+</div>
+
+
+<!--location-->
+<div class="card">
+<div class="contact">
+    <h1>contact me</h1>
+    <p>phone no: 07032290086</p>
+    <p>maryamoladunni28@gmail.com</p>
+    </div>
+    </div>
+</div>
+<!--footer-->
+<footer id="main-footer">
+    <p class="mee"></p>Designed and built with lots of love.</p>
+    <ul class="icons">
+    <li><a href="https://www.linkedin.com/in/maryam-moshood-salami-2999a0179/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+    <li><a href="https://07032290086" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+    <li><a href="https://github.com/oladunni28" target="_blank"><i class="fab fa-github"></i></a></li>
+   <li><a href="https://maryamoladunni28@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+   </ul>
 </footer>
 </html>
