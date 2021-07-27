@@ -8,7 +8,7 @@
 html,body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7em;
-    background-color:white;
+    background-color:smokewhite;
 }
 
 a{
@@ -76,7 +76,7 @@ p{
 }
 
 h1{
-    color: rgb(139, 26, 6);
+    color: snow;
     font-size: 30px;
     font-weight: bold;
 }
@@ -105,8 +105,9 @@ input{
     color: white;
     padding: 20px;
     margin-bottom: 10px;
-    border: 4px solid rgb(139, 26, 6);
+    border: 3px solid rgb(139, 26, 6);
     margin: 10em;
+
 }
 
 form textarea{
@@ -122,24 +123,68 @@ label {
     color: snow;
 }
 
+.typewriter {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;transform: translateY(-30%);
+    font-size: 100%;
+    animation: typewriter 4s steps(40) 4s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
+}
+/*.intro{
+    width: 100%;
+    font-size: 100%;
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) infinite normal;
 
+}*/
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+
+    to  {
+        width: 16em;
+    }
+}
+    @keyframes blinkTextCursor{
+        from {
+            border-right-color: powderblue;
+        }
+        to {
+            border-right-color: transparent;
+        }
+    }
+
+ 
 .btn{ 
     width: 150px;
-    padding: 20px;
+    padding: 25px;
     background-color: rgb(139, 26, 6);
     color: white;
     margin: 10px;
     border: none;
-    border-radius:none;
+    border-radius:17px;
+    /* transition: background 2s ease-in-out; */
 }
-  
+  .btn:hover {
+background-color: blue;
+color: white;
+
+  }
 
 /*footer*/
 #main-footer{
     display: inline-block;
     color: white;
     padding: 5px;
-    background-color:  black;
+    background-color:black;
     width: 100%;
     position: relative;
     top: 100%;
@@ -161,7 +206,8 @@ label {
 
 .logo{
     display: inline-block;
-padding: 20px;
+    padding: 20px;
+    /*text-shadow: 0.2rem 0.2rem 1rem white;*/
 }
 
 .mee{
