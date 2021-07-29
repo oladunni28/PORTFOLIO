@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -6,15 +10,16 @@
 
 /* main styling*/
 html,body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7em;
-    background-color:smokewhite;
+    font-family: 'Lobster';
+    line-height: 2em;
+    background-color:rgb(51, 40, 119);
 }
 
 a{
     color:white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 23px;
 }
 
 h1, h2, h3 {
@@ -30,10 +35,11 @@ p{
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color:black;
     color: white;
     overflow: auto;
     border-radius: 5px;
+    width: 100%;
+    /*position:fixed ;*/
 }
 
 .navbar li{ 
@@ -52,15 +58,18 @@ a:hover{
     font-size: 20px;
 }
 
-.btn:hover{ 
-    color: lightslategray;
+
+/*navbar logo*/
+.logo{
+    display: inline-block;
+    padding: 20px;
+    font-size: 20px;
+    /*text-shadow: 0.2rem 0.2rem 1rem white;*/
 }
 
-form p{
-    color: black;
-    font-weight: bold;
-}
-
+ .body-container{
+     height: 1000px;
+ }
 .wrapper{
     max-width: 960px;
     margin: 50px auto;
@@ -68,11 +77,19 @@ form p{
 
 }
 
+h1{
+    color:#4585F7;
+    font-family: courier;
+    font-size: 50px;
+}
+
+
 p{
     align-items: center;
     justify-content: center;
-    color: whitesmoke;
-    font-size: 20px;
+    color:black;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 h1{
@@ -80,19 +97,42 @@ h1{
     font-size: 30px;
     font-weight: bold;
 }
-.main img{
-    border-radius: 50%;
+.main{
+    background-image:url("./images/workingremotely4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 500px;
+    padding-left: 35px;
+
+
+    
+}
+/*project section*/
+.project-section1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
 }
 
+.project-section2{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem;
+}
+
+
+/* grid section*/
 .grid h1{
     font-size: large;
-    color: black;
+    color:white;
     font-weight: bold;
 }
 
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(200px auto);
     max-width: 800px;
     padding: 1rem;
     margin: 0 auto;
@@ -109,8 +149,6 @@ height: 100%;
 border-radius: 10px;
 
 }   
-
-
 
 .b{
 grid-column: 2/4;
@@ -131,48 +169,109 @@ grid-column: 2/4;
             grid-row: 3;
             }
         
-
-
-
-
-strong{
-    color: rgb(139, 26, 6);;
+            strong{
+    color: gray;
 }
 
-input{
+
+/*form section*/
+form{
+    display:inline-block;
+    background-color:darkturquoise;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    margin-top: 50px;
+   margin-bottom: 20px;
+    border-right: 30px solid #4585F7;
+    margin-left: 23rem;
+    padding-left: 2rem;
+
+
+}
+
+form p{
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+}
+
+form h1{
+    margin-top: 10px;
+}
+
+form input{
     width: 350px;
-    padding: 20px;
+    padding: 14px;
+    background-color: rgb(211, 203, 203);
     border: none;
-    border-radius: 8px;
-    margin: 20px;
-    background-color: rgb(139, 26, 6);
-    color: snow;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+form textarea{
+    background: rgb(211, 203, 203);
+    margin: 1.5rem;
+}
+
+form label{
+    font-size: 22px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+/*button section*/
+.btn{
+    width: 360px;
+    padding: 15px;
+    background-color:#4585F7;
+    color: white;
+    margin: 10px;
+    border: none;
+    border-radius:10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+background-color:rgb(51, 37, 143);
+color: white;
+}
+
+
+/*contact section*/
+.contact p{
+    color: whitesmoke;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+
+.contact{
+    align-items: center;
+    justify-content: center;
+    margin-left: 27rem;
+}
+
+h2{
+margin-left: 20rem;
+font-size: 33px;
+color: whitesmoke;
+font-weight: bold;
     
 }
 
+/*card section*/
 .card{
-    background-color:black;
-    color: white;
+    background-color:whitesmoke;
     padding: 20px;
     margin-bottom: 10px;
-    border: 3px solid rgb(139, 26, 6);
+    border: 5px solid gray;
     margin: 10em;
 
 }
 
-form textarea{
-    background-color: rgb(139, 26, 6);
-    color: snow;
-}
-
-form :placeholder{
-    color:snow;
-}
-
-label {
-    color: snow;
-}
-
+/*typewriter section*/
 .typewriter {
     position: relative;
     top: 50%;
@@ -212,34 +311,17 @@ label {
         }
     }
 
- 
-.btn{ 
-    width: 150px;
-    padding: 25px;
-    background-color: rgb(139, 26, 6);
-    color: white;
-    margin: 10px;
-    border: none;
-    border-radius:17px;
-    /* transition: background 2s ease-in-out; */
-}
-  .btn:hover {
-background-color: blue;
-color: white;
-
-  }
-
-/*footer*/
+/*footer section*/
 #main-footer{
     display: inline-block;
-    color: white;
     padding: 5px;
-    background-color:black;
+    background-color:gray;
     width: 100%;
     position: relative;
     top: 100%;
 }
 
+/*footer icons*/
 .icons li a{
     float: right;
     font-size: 20px;
@@ -254,25 +336,34 @@ color: white;
  }
 
 
-.logo{
-    display: inline-block;
-    padding: 20px;
-    /*text-shadow: 0.2rem 0.2rem 1rem white;*/
-}
-
 .mee{
     padding-left: 5em;
+    color: white;
+    font-size: 20px;
     
 }
 
-
-@media only screen and ( max-width: 960px)
+/*media querie*/
+@media only screen and ( max-width:500px)
     {
         .card{
             margin: 40px;
             padding: 4px;
             
         }
+
+        header{
+            padding: 20px 20px;
+        }
+
+        .navbar{
+            position: fixed;
+            top: 75px;
+            left: -100%;
+            display: block;
+        }
+
+
 
         p{
             font-size: 1em;
