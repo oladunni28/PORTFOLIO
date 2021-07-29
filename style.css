@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-
 
 *{
     padding: 0;
@@ -10,9 +7,10 @@
 
 /* main styling*/
 html,body{
-    font-family: 'Lobster';
+    
     line-height: 2em;
     background-color:rgb(51, 40, 119);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -107,7 +105,7 @@ p{
 }
 .main p{
     font-size: 27px;
-    color: darkblue;
+    color: black;
     font-weight: bold;
 }
     
@@ -198,16 +196,17 @@ form{
     padding-bottom: 40px;
     padding-top: 50px;
     margin-top: 50px;
-   margin-bottom: 70px;
+    margin-bottom: 70px;
     border-right: 30px solid #4585F7;
-    margin-left: 23rem;
+    margin-left: 25rem;
     padding-left: 2rem;
+    
 
 
 }
 
 form p{
-    color:whitesmoke;
+    color: black;
     font-weight: bold;
     font-size: 20px;
     margin: 10px;
@@ -234,7 +233,7 @@ form textarea{
 form label{
     font-size: 22px;
     font-weight: bold;
-    color: whitesmoke;
+    color: black;
 }
 
 /*button section*/
