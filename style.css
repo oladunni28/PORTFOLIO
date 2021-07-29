@@ -50,21 +50,23 @@ float: right;
     color:white;
     display: block;
     text-decoration: none;
-    padding: 15px 20px;
+   padding: 15px 20px;
 }
 
 a:hover{
-    color:lightslategray;
+    color:sandybrown;
     font-size: 20px;
 }
 
+.navbar li a:hover{
+    color:sandybrown;
+}
 
 /*navbar logo*/
 .logo{
     display: inline-block;
     padding: 20px;
-    font-size: 20px;
-    /*text-shadow: 0.2rem 0.2rem 1rem white;*/
+    font-size: 25px;
 }
 
  .body-container{
@@ -87,40 +89,55 @@ h1{
 p{
     align-items: center;
     justify-content: center;
-    color:black;
+    color:whitesmoke;
     font-size: 22px;
-    font-weight: bold;
 }
 
-h1{
-    color: snow;
-    font-size: 30px;
-    font-weight: bold;
-}
 .main{
     background-image:url("./images/workingremotely4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 800px;
     height: 500px;
-    padding-left: 35px;
-
-
-    
+    padding-left: 42px;
 }
+
+.main{
+    border: 4px solid #4585F7;
+}
+.main p{
+    font-size: 27px;
+    color: darkblue;
+    font-weight: bold;
+}
+    
+
 /*project section*/
 .project-section1{
     display: flex;
     justify-content: space-evenly;
-    margin: 1rem;
+    margin-bottom: 5rem;
 }
 
 .project-section2{
     display: flex;
     justify-content: space-evenly;
     margin: 1rem;
+    
 }
 
+.main-project{
+
+border: 3px solid #4585F7;
+background-color: gray;
+margin-bottom: 5rem;
+
+}
+.tee{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
 
 /* grid section*/
 .grid h1{
@@ -181,7 +198,7 @@ form{
     padding-bottom: 40px;
     padding-top: 50px;
     margin-top: 50px;
-   margin-bottom: 20px;
+   margin-bottom: 70px;
     border-right: 30px solid #4585F7;
     margin-left: 23rem;
     padding-left: 2rem;
@@ -253,20 +270,26 @@ color: white;
     margin-left: 27rem;
 }
 
+.contact-1{
+    padding: 1rem;
+    margin-left: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 h2{
-margin-left: 20rem;
+margin-left: 30rem;
 font-size: 33px;
 color: whitesmoke;
-font-weight: bold;
     
 }
 
 /*card section*/
 .card{
-    background-color:whitesmoke;
+    background-color:rgb(102, 99, 99);
     padding: 20px;
     margin-bottom: 10px;
-    border: 5px solid gray;
+    border: 5px solid #4585F7;
     margin: 10em;
 
 }
